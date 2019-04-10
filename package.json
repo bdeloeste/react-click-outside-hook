@@ -8,6 +8,17 @@
     "email": "bryandeloeste@gmail.com"
   },
   "license": "MIT",
+  "files": [
+    "build/*"
+  ],
+  "keywords": [
+    "react",
+    "component",
+    "hooks",
+    "clickoutside",
+    "onClickOutside",
+    "useClickOutside"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/bdeloeste/react-click-outside-hook"
