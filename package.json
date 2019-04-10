@@ -1,6 +1,6 @@
 {
   "name": "react-click-outside-hook",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "build/index.js",
   "description": "Simple to use React Hook with click outside functionality",
   "author": {
@@ -40,5 +40,17 @@
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,jsx,css,md}": [
+      "neutrino lint --fix",
+      "neutrino test --findRelatedTests",
+      "git add"
+    ]
   }
 }
