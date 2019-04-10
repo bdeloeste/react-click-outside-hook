@@ -59,10 +59,10 @@ function Component() {
 [npm-version-svg]: https://img.shields.io/npm/v/react-click-outside-hook.svg
 [npm-minzip-svg]: https://img.shields.io/bundlephobia/minzip/react.svg
 [bundlephobia-url]: https://bundlephobia.com/result?p=react-click-outside-hook
-[travis-svg]: https://travis-ci.org/thebuilder/react-click-outside-hook.svg
-[travis-url]: https://travis-ci.org/thebuilder/react-click-outside-hook
-[coveralls-svg]: https://coveralls.io/repos/github/thebuilder/react-click-outside-hook/badge.svg?branch=master
-[coveralls-url]: https://coveralls.io/github/thebuilder/react-click-outside-hook?branch=master
+[travis-svg]: https://travis-ci.org/bdeloeste/react-click-outside-hook.svg
+[travis-url]: https://travis-ci.org/bdeloeste/react-click-outside-hook
+[coveralls-svg]: https://coveralls.io/repos/github/bdeloeste/react-click-outside-hook/badge.svg?branch=master
+[coveralls-url]: https://coveralls.io/github/bdeloeste/react-click-outside-hook?branch=master
 [license-image]: http://img.shields.io/npm/l/react-click-outside-hook.svg
 [license-url]: LICENSE
 [downloads-image]: http://img.shields.io/npm/dm/react-click-outside-hook.svg
