@@ -15,7 +15,7 @@ React Hook implementation with click outside functionality.
 - 🎣 **Hooks API** - Easy to use API thanks to React Hooks
 
 - 🌳 **Tree-shakeable** - Only include the parts you use
-- 💥 **Tiny bundle** [~1.9 kB gzipped][bundlephobia-url]
+- 💥 **Tiny bundle** [~850 bytes gzipped][bundlephobia-url]
 
 ## Installation
 
