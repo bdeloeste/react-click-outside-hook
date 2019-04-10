@@ -1,5 +1,4 @@
 import { mount } from 'enzyme'
-import ReactDOM from 'react-dom'
 import { act } from 'react-dom/test-utils'
 import { useClickOutside } from '../src/components/useClickOutside'
 
@@ -42,7 +41,7 @@ describe('useClickOutside', () => {
     const dummy = wrapper.find('#dummy')
     act(() => {
       map.mousedown({
-        target: ReactDOM.findDOMNode(dummy.instance()),
+        target: dummy.getDOMNode(),
       })
     })
     const clickable = wrapper.find('#clickable')
@@ -51,11 +50,10 @@ describe('useClickOutside', () => {
 
   it('should click inside of the clickable element and set hasOutsideClicked to `false`', () => {
     const wrapper = render()
-    const dummy = wrapper.find('#dummy')
     const clickable = wrapper.find('#clickable')
     act(() => {
       map.mousedown({
-        target: ReactDOM.findDOMNode(clickable.instance()),
+        target: clickable.getDOMNode(),
       })
     })
     expect(clickable.text()).toEqual('false')
