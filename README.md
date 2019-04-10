@@ -55,17 +55,17 @@ function Component() {
 }
 ```
 
-[package-url]: https://npmjs.org/package/react-clickoutside-hook-
+[package-url]: https://npmjs.org/package/react-click-outside-hook
 [npm-version-svg]: https://img.shields.io/npm/v/react-click-outside-hook.svg
 [npm-minzip-svg]: https://img.shields.io/bundlephobia/minzip/react.svg
-[bundlephobia-url]: https://bundlephobia.com/result?p=react-clickoutside-hook-
+[bundlephobia-url]: https://bundlephobia.com/result?p=react-click-outside-hook
 [travis-svg]: https://travis-ci.org/thebuilder/react-click-outside-hook.svg
-[travis-url]: https://travis-ci.org/thebuilder/react-clickoutside-hook-
+[travis-url]: https://travis-ci.org/thebuilder/react-click-outside-hook
 [coveralls-svg]: https://coveralls.io/repos/github/thebuilder/react-click-outside-hook/badge.svg?branch=master
 [coveralls-url]: https://coveralls.io/github/thebuilder/react-click-outside-hook?branch=master
 [license-image]: http://img.shields.io/npm/l/react-click-outside-hook.svg
 [license-url]: LICENSE
 [downloads-image]: http://img.shields.io/npm/dm/react-click-outside-hook.svg
-[downloads-url]: http://npm-stat.com/charts.html?package=react-clickoutside-hook-
+[downloads-url]: http://npm-stat.com/charts.html?package=react-click-outside-hook
 [prettier-svg]: https://img.shields.io/badge/styled_with-prettier-ff69b4.svg
 [prettier-url]: https://github.com/prettier/prettier
