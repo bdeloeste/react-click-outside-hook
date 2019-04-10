@@ -39,10 +39,10 @@ npm install react-click-outside-hook --save
 const [ref, hasClickedOutside] = useClickOutside()
 ```
 
-The new React Hooks, makes it easier then ever to monitor the `hasClickedOutside` state of
-your components. Call the `useClickOutside` hook which will return an array containing a `ref`, the
+The new React Hooks make it easier than ever to monitor the `hasClickedOutside` state of
+your components. Call the `useClickOutside` hook which will return an array containing a `ref` and the
 `hasClickedOutside` status.
-Assign the `ref` to the DOM element you want to monitor, and the hook will
+Simply assign the `ref` to the DOM element you want to monitor and the hook will
 report the status.
 
 ```jsx
