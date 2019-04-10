@@ -1,6 +1,6 @@
 {
   "name": "react-click-outside-hook",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "main": "build/index.js",
   "description": "Simple to use React Hook with click outside functionality",
   "author": {
