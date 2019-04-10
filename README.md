@@ -32,7 +32,7 @@ const [ref, hasClickedOutside] = useClickOutside()
 ```
 
 The new React Hooks, makes it easier then ever to monitor the `hasClickedOutside` state of
-your components. Call the `useInView` hook which will return an array containing a `ref`, the
+your components. Call the `useClickOutside` hook which will return an array containing a `ref`, the
 `hasClickedOutside` status.
 Assign the `ref` to the DOM element you want to monitor, and the hook will
 report the status.
