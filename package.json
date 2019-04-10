@@ -24,15 +24,18 @@
     "url": "https://github.com/bdeloeste/react-click-outside-hook"
   },
   "scripts": {
+    "coveralls": "cat ./coverage/lcov.info | coveralls",
     "build": "neutrino build",
     "start": "neutrino start",
     "lint": "neutrino lint",
-    "test": "neutrino test"
+    "test": "neutrino test",
+    "coverage": "neutrino test --coverage"
   },
   "devDependencies": {
     "@neutrinojs/airbnb": "^8.3.0",
     "@neutrinojs/jest": "^8.3.0",
     "@neutrinojs/react-components": "^8.3.0",
+    "coveralls": "^3.0.3",
     "enzyme": "^3.9.0",
     "enzyme-adapter-react-16": "^1.12.1",
     "eslint-plugin-react-hooks": "^1.6.0",

@@ -25,6 +25,11 @@ module.exports = {
       '@neutrinojs/jest',
       {
         setupTestFrameworkScriptFile: '<rootDir>/test/setupTests.js',
+        coveragePathIgnorePatterns: [
+          '/node_modules/',
+          '/src/demo/',
+          '/src/index.jsx',
+        ],
       },
     ],
   ],
