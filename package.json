@@ -1,8 +1,17 @@
 {
   "name": "react-click-outside-hook",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "build/index.js",
+  "description": "Simple to use React Hook with click outside functionality",
+  "author": {
+    "name": "Bryan Deloeste",
+    "email": "bryandeloeste@gmail.com"
+  },
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bdeloeste/react-click-outside-hook"
+  },
   "scripts": {
     "build": "neutrino build",
     "start": "neutrino start",
