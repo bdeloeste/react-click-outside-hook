@@ -6,7 +6,7 @@ export function useClickOutside() {
     hasClickedOutside: false,
   })
 
-  function handleClick(e) {
+  function handleEvent(e) {
     /* istanbul ignore else  */
     if (ref && ref.current) {
       if (ref.current.contains(e.target)) {
@@ -18,10 +18,20 @@ export function useClickOutside() {
   }
 
   useEffect(() => {
-    document.addEventListener('mousedown', handleClick)
+    if (window.PointerEvent) {
+      document.addEventListener('pointerdown', handleEvent)
+    } else {
+      document.addEventListener('mousedown', handleEvent)
+      document.addEventListener('touchstart', handleEvent)
+    }
 
     return () => {
-      document.removeEventListener('mousedown', handleClick)
+      if (window.PointerEvent) {
+        document.addEventListener('pointerdown', handleEvent)
+      } else {
+        document.removeEventListener('mousedown', handleEvent)
+        document.removeEventListener('touchstart', handleEvent)
+      }
     }
   }, [])
 
