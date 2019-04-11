@@ -62,10 +62,21 @@ describe('useClickOutside', () => {
     expect(clickable.text()).toEqual('false')
   })
 
-  it('should remove mousedown event listener', () => {
+  it('should add and remove `mousedown` and `touchstart` event listeners on mount and unmount', () => {
     const wrapper = render()
     expect(map).toHaveProperty('mousedown')
+    expect(map).toHaveProperty('touchstart')
     wrapper.unmount()
     expect(map).toHaveProperty('mousedown')
+    expect(map).toHaveProperty('touchstart')
+  })
+
+  it('should add and remove pointerdown event listener on mount and unmount', () => {
+    global.PointerEvent = jest.fn()
+    const wrapper = render()
+    expect(map).toHaveProperty('pointerdown')
+    wrapper.unmount()
+    expect(map).toHaveProperty('pointerdown')
+    global.PointerEvent.mockClear()
   })
 })
