@@ -7,6 +7,7 @@ export function useClickOutside() {
   })
 
   function handleClick(e) {
+    /* istanbul ignore else  */
     if (ref && ref.current) {
       if (ref.current.contains(e.target)) {
         setState({ hasClickedOutside: false })
@@ -17,9 +18,6 @@ export function useClickOutside() {
   }
 
   useEffect(() => {
-    if (!ref) {
-      return
-    }
     document.addEventListener('mousedown', handleClick)
 
     return () => {

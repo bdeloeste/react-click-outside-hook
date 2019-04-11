@@ -1,6 +1,6 @@
 import { mount } from 'enzyme'
 import { act } from 'react-dom/test-utils'
-import { useClickOutside } from '../src/components/useClickOutside'
+import { useClickOutside } from '../src/components'
 
 function ClickableComponent() {
   const [ref, hasClickedOutside] = useClickOutside()
@@ -30,6 +30,9 @@ describe('useClickOutside', () => {
     document.addEventListener = jest.fn((event, cb) => {
       map[event] = cb
     })
+    document.removeEventListener = jest.fn((event, cb) => {
+      map[event] = cb
+    })
   })
 
   afterAll(() => {
@@ -57,5 +60,12 @@ describe('useClickOutside', () => {
       })
     })
     expect(clickable.text()).toEqual('false')
+  })
+
+  it('should remove mousedown event listener', () => {
+    const wrapper = render()
+    expect(map).toHaveProperty('mousedown')
+    wrapper.unmount()
+    expect(map).toHaveProperty('mousedown')
   })
 })
