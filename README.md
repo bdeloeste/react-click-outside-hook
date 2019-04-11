@@ -12,6 +12,7 @@ React Hook implementation with click outside functionality.
 
 ## Features
 
+- 👆 **Support for `pointer` and `touch` events**
 - 🎣 **Made with 💖 by React Hooks** - Easy to use API thanks to React Hooks
 - 💥 **Tiny bundle** [~850 bytes gzipped][bundlephobia-url]
 
