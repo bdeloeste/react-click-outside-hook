@@ -27,7 +27,7 @@ export function useClickOutside() {
 
     return () => {
       if (window.PointerEvent) {
-        document.addEventListener('pointerdown', handleEvent)
+        document.removeEventListener('pointerdown', handleEvent)
       } else {
         document.removeEventListener('mousedown', handleEvent)
         document.removeEventListener('touchstart', handleEvent)
